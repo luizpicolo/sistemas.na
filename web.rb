@@ -1,5 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  "Hello, world"
+   erb :home
+end
+
+get '/siai' do
+  redirect 'http://sistemas.na.ifms.edu.br:2697/'
 end
