@@ -1,0 +1,17 @@
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  text-align: justify;
+}
+
+.is-success {
+  background: #2F9D41 !important;
+}

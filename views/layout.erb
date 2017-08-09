@@ -2,9 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Catálogo de Sistema - IFMS - Campus Nova Andradina</title>
+    <link rel="stylesheet" href="/css/bulma.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <%= yield %>
+    <main>
+      <header class="content">
+        <img src="/image/logo_ifms_v.jpg" width="200" alt="">
+        <h1 class="title is-5">Seja bem vindo(a) ai Catálogo de Sistemas IFMS/NA</h1>
+        <p>A Serti (Setor de Tecnologia da Informação e Suporte Técnico) campus de Nova Andradina oferece uma série de serviços de alta qualidade para a comunidade do IFMS. A partir deste portal, nossos servidores poderão conhecer e se apropriar dos nossos serviços para fortalecermos, cada vez mais, a excelência dos serviços prestados pelo IFMS/NA</p>
+      </header>
+      <%= yield %>
+    </main>
   </body>
 </html>
