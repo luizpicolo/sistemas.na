@@ -262,6 +262,13 @@ table th {
   font-size: 3rem !important;
 }
 
+@media only screen and (max-width: 340px) {
+  .button {
+    font-size: 13px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .is-size-1-mobile {
     font-size: 3rem !important;
