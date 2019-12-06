@@ -8,10 +8,6 @@ header {
   text-align: center;
 }
 
-header p {
-  text-align: justify;
-}
-
 .is-success {
   background: #2F9D41 !important;
 }
