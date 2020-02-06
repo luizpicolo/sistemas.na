@@ -15,3 +15,7 @@ end
 get '/sigoe.pp' do
   redirect 'http://sistemas.na.ifms.edu.br:2693/'
 end
+
+get '/sigoe.tl' do
+  redirect 'http://sistemas.na.ifms.edu.br:2692/'
+end
