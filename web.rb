@@ -1,21 +1,20 @@
 require 'sinatra'
 
+base_url = 'http://sistemas.na.ifms.edu.br'
+paths = [
+  ['/sigoe.na', '2697'],
+  ['/sigoe.nv', '2696'],
+  ['/sigoe.pp', '2693'],
+  ['/sigoe.tl', '2692'],
+  ['/sigoe.aq', '2691'],
+]
+
 get '/' do
-   erb :home
+  erb :home
 end
 
-get '/sigoe.na' do
-  redirect 'http://sistemas.na.ifms.edu.br:2697/'
-end
-
-get '/sigoe.nv' do
-  redirect 'http://sistemas.na.ifms.edu.br:20435/'
-end
-
-get '/sigoe.pp' do
-  redirect 'http://sistemas.na.ifms.edu.br:2693/'
-end
-
-get '/sigoe.tl' do
-  redirect 'http://sistemas.na.ifms.edu.br:2692/'
+paths.each do |path|
+  get path do
+    redirect "#{base_url}:#{path.last}/"
+  end
 end
