@@ -7,6 +7,7 @@ paths = [
   ['/sigoe.pp', '2693'],
   ['/sigoe.tl', '2692'],
   ['/sigoe.aq', '2691'],
+  ['/sigoe.cb', '2690'],
 ]
 
 get '/' do
