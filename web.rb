@@ -9,6 +9,7 @@ paths = [
   ['sigoe.aq', 'Aquidauana',     '2691'],
   ['sigoe.cb', 'Corumbá',        '2690'],
   ['sigoe.dr', 'Dourados',       '2689'],
+  ['sigoe.cx', 'Coxim',          '2688'],
 ]
 
 get '/' do
