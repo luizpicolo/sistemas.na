@@ -1,40 +1,9 @@
-<div class="columns is-desktop">
-  <div class="column has-text-centered is-success">
-    <a href="http://sistemas.na.ifms.edu.br/sigoe.aq" class="button is-success">Aquidauana</a>
+<% @paths.each_slice(2) do |paths| %>
+  <div class="columns is-desktop">
+    <% paths.each do |path| %>
+      <div class="column has-text-centered is-success">
+        <a href="<%= @base_url %>/<%= path[0] %>" class="button is-success"><%= path[1] %></a>
+      </div>
+    <% end %>
   </div>
-  <div class="column has-text-centered is-success">
-    <a href="http://sistemas.na.ifms.edu.br/sigoe.cb" class="button is-success">Corumbá</a>
-  </div>
-</div>
-<div class="columns is-desktop">
-  <div class="column has-text-centered is-success">
-    <a href="#" class="button is-success">Coxim</a>
-  </div>
-  <div class="column has-text-centered is-success">
-    <a href="#" class="button is-success">Campo Grande</a>
-  </div>
-</div>
-<div class="columns is-desktop">
-  <div class="column has-text-centered is-success">
-    <a href="http://sistemas.na.ifms.edu.br/sigoe.dr" class="button is-success">Dourados</a>
-  </div>
-  <div class="column has-text-centered is-success">
-    <a href="#" class="button is-success">Jardim</a>
-  </div>
-</div>
-<div class="columns is-desktop">
-  <div class="column has-text-centered is-success">
-    <a href="http://sistemas.na.ifms.edu.br/sigoe.na" class="button is-success">Nova Andradina</a>
-  </div>
-  <div class="column has-text-centered is-success">
-    <a href="http://sistemas.na.ifms.edu.br/sigoe.nv" class="button is-success">Naviraí</a>
-  </div>
-</div>
-<div class="columns is-desktop">
-  <div class="column has-text-centered is-success">
-    <a href="http://sistemas.na.ifms.edu.br/sigoe.pp" class="button is-success">Ponta Porã</a>
-  </div>
-  <div class="column has-text-centered is-success">
-    <a href="http://sistemas.na.ifms.edu.br/sigoe.tl" class="button is-success">Três Lagoas</a>
-  </div>
-</div>
+<% end %>

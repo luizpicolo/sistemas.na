@@ -2,16 +2,18 @@ require 'sinatra'
 
 base_url = 'http://sistemas.na.ifms.edu.br'
 paths = [
-  ['/sigoe.na', '2697'],
-  ['/sigoe.nv', '2696'],
-  ['/sigoe.pp', '2693'],
-  ['/sigoe.tl', '2692'],
-  ['/sigoe.aq', '2691'],
-  ['/sigoe.cb', '2690'],
-  ['/sigoe.dr', '2689'],
+  ['sigoe.na', 'Nova Andradina', '2697'],
+  ['sigoe.nv', 'Naviraí',        '2696'],
+  ['sigoe.pp', 'Ponta Porã',     '2693'],
+  ['sigoe.tl', 'Três Lagoas',    '2692'],
+  ['sigoe.aq', 'Aquidauana',     '2691'],
+  ['sigoe.cb', 'Corumbá',        '2690'],
+  ['sigoe.dr', 'Dourados',       '2689'],
 ]
 
 get '/' do
+  @paths = paths
+  @base_url = base_url
   erb :home
 end
 
