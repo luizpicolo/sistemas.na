@@ -8,6 +8,7 @@ paths = [
   ['/sigoe.tl', '2692'],
   ['/sigoe.aq', '2691'],
   ['/sigoe.cb', '2690'],
+  ['/sigoe.dr', '2689'],
 ]
 
 get '/' do
