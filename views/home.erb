@@ -1,9 +1,7 @@
-<% @paths.each_slice(2) do |paths| %>
-  <div class="columns is-desktop">
-    <% paths.each do |path| %>
-      <div class="column has-text-centered is-success">
-        <a href="<%= @base_url %>/<%= path[0] %>" class="button is-success"><%= path[1] %></a>
-      </div>
-    <% end %>
-  </div>
-<% end %>
+<div class="is-multiline columns is-desktop">
+  <% @paths.each do |path| %>
+    <div class="is-half column has-text-centered is-success">
+      <a href="<%= @base_url %>/<%= path[0] %>" class="button is-success"><%= path[1] %></a>
+    </div>
+  <% end %>
+</div>
