@@ -3,4 +3,4 @@ ruby '2.7.2'
 
 gem 'sinatra'
 
-gem "puma", "~> 5.6"
+gem "puma", "~> 6.0"
